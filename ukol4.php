@@ -17,11 +17,12 @@ foreach($json as $item){
     if (!is_object($item)){
         continue;
     }
-    $string = str_replace(' ', '', $string);
+    $string = str_replace(' ', '', $item->math);
     $result = substr($string, strpos($string, '= ')+1);
     $result = str_replace(' ', '', $result);
     $math   = str_replace('='.$result, '', $string);
     $r      = $m->calculateOld($math);
+
     if ($r == $result){
         $equal[] = $item;
     }
