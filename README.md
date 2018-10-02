@@ -1,1 +1,1 @@
-# fyribxvat
+# Ukoly pro slevoking: Košut
